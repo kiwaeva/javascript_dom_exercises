@@ -19,3 +19,16 @@ blueHeader.textContent = "I'm a blue h3!"
 blueHeader.style.color = "blue";
 
 container.appendChild(blueHeader);
+
+const div = document.createElement("div")
+// div.innerHTML = "<h1>I'm in a div</h1> <p>Me too!</p>"
+const heading = document.createElement("h1");
+heading.textContent= "I'm in div";
+
+const paragraph = document.createElement("p");
+paragraph.textContent = "Me too!";
+
+div.appendChild(heading);
+div.appendChild(paragraph);
+
+container.appendChild(div);
