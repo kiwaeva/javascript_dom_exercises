@@ -40,3 +40,16 @@ const bttn = document.querySelector('#bttn');
 bttn.addEventListener("click", () => {
     alert("Hello World")
 });
+
+function alertFunction () {
+    alert("Yay! that's an Alert function in action!");
+}
+
+// method 2
+const button = document.querySelector('#button');
+button.onclick = alertFunction;
+
+// method 3
+const button2= document.querySelector("#button2")
+button2.addEventListener("click", alertFunction);
+
