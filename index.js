@@ -32,3 +32,11 @@ div.appendChild(heading);
 div.appendChild(paragraph);
 
 container.appendChild(div);
+
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert('Hello World');
+
+const bttn = document.querySelector('#bttn');
+bttn.addEventListener("click", () => {
+    alert("Hello World")
+});
