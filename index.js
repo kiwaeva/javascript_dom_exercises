@@ -53,3 +53,21 @@ button.onclick = alertFunction;
 const button2= document.querySelector("#button2")
 button2.addEventListener("click", alertFunction);
 
+// We can access more information about the event by passing a parameter to the function that we are calling:
+
+// Within that object you have access to many useful properties and methods (functions that live inside an object) such as which mouse button or key was pressed.
+btn.addEventListener("click", function (e) {
+  console.log(e);
+});
+
+// or information about the event’s target - the DOM node that was clicked.
+btn.addEventListener("click", function (e) {
+  console.log(e.target);
+});
+
+// In this example, we are setting a random background color on the button, not the page.
+btn.addEventListener("click", function (e) {
+  e.target.style.background = "blue";
+  e.target.style.color = "white";
+});
+
